@@ -36,4 +36,8 @@ IP BLOCKS: ['173.194.206.0/24',...TRUNCATED DATA...]
 Would you like to save IP blocks to a file? (y/n)
 ```
 
-If you say yes it will save the blocks out, you can then take that file and just copy the IPv4 block and pump it into IPIteratorLookup.py, this will check the whole file and see if the IPs above and below the IPs in the file are owned by the same ASN Org. it then outputs it into another text file. there are some wonky stuff with /22 and /23 addresses, will be fixed later
+If you say yes it will save the blocks out, you can then take that file and just copy the IPv4 block and pump it into IPIteratorLookup.py, this will check the whole file and see if the IPs above and below the IPs in the file are owned by the same ASN Org. it then outputs it into another text file
+
+`python3 IPIteratorLookup.py`
+
+This will take an input file of IP address ranges and check the ranges next to it to see if the ASN Org is the same, useful if youre trying to make a block list, there are some wonky stuff with /22 and /23 addresses, will be fixed later.
